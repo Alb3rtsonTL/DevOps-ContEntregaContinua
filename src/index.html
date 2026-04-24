@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="language" content="es" />
+  <title>DevOps · Entrega Continua con Docker</title>
+  <meta name="description" content="App Hello World contenerizada con Docker y publicada en Docker Hub" />
+  <meta name="author" content="Alb3rtsonTL - Albertson Terrero López" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/img/logo.png" type="image/png" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="DevOps · Entrega Continua con Docker" />
+  <meta property="og:description" content="App Hello World contenerizada con Docker y publicada en Docker Hub" />
+  <meta property="og:image" content="/img/preview.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DevOps · Entrega Continua con Docker" />
+  <meta name="twitter:description" content="App Hello World contenerizada con Docker y publicada en Docker Hub" />
+  <meta name="twitter:image" content="/img/preview.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+
+  <main class="card">
+    <div class="card-inner"></div>
+    <div class="card-content">
+
+      <!-- Badge -->
+      <span class="badge">
+        <span class="status-dot"></span>
+        Docker · Contenedor activo
+      </span>
+
+      <h1 class="hero-name">Hello, World! 🐳</h1>
+
+      <p class="hero-text">
+        <span>
+          App web estática · Contenerizada con Docker · Imagen publicada en Docker Hub · Nginx como servidor
+        </span>
+      </p>
+
+      <!-- Tools grid -->
+      <div class="layout">
+
+        <div class="card">
+          <div class="card-content">
+            <strong>🐳 Docker</strong>
+            <p class="tool-desc">
+              Plataforma de contenerización. Empaqueta la app con todas sus dependencias en una imagen portable y reproducible.
+            </p>
+            <span class="tool-tag">Dockerfile · docker build · docker run</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <strong>🗂 Docker Hub</strong>
+            <p class="tool-desc">
+              Registro público de imágenes Docker. Permite almacenar, versionar y distribuir la imagen de la aplicación.
+            </p>
+            <span class="tool-tag">docker push · docker pull · registry</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <strong>⚙️ Nginx</strong>
+            <p class="tool-desc">
+              Servidor web usado como base de la imagen. Sirve los archivos estáticos (HTML/CSS/JS) dentro del contenedor.
+            </p>
+            <span class="tool-tag">nginx:alpine · puerto 80 · static files</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <strong>📄 Dockerfile</strong>
+            <p class="tool-desc">
+              Archivo de instrucciones para construir la imagen. Define la base, copia los archivos y configura el servidor.
+            </p>
+            <span class="tool-tag">FROM · COPY · EXPOSE · CMD</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botones -->
+      <div class="btns">
+        <a href="https://github.com/Alb3rtsonTL/DevOps-EntregaContinua" target="_blank">
+          GitHub Repo ↗
+        </a>
+        <a href="https://hub.docker.com/u/alb3rtsontl" target="_blank">
+          Docker Hub ↗
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    &copy; <span id="year"></span>
+    <a href="https://github.com/Alb3rtsonTL" target="_blank">
+      <strong>Alb3rtsonTL</strong>
+    </a>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
