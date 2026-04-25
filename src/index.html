@@ -9,22 +9,16 @@
   <meta name="description" content="App Hello World contenerizada con Docker y publicada en Docker Hub" />
   <meta name="author" content="Alb3rtsonTL - Albertson Terrero López" />
   <meta name="robots" content="index, follow" />
-
-  <!-- Favicon -->
   <link rel="icon" href="/img/logo.png" type="image/png" />
-  <!-- Open Graph -->
   <meta property="og:title" content="DevOps · Entrega Continua con Docker" />
   <meta property="og:description" content="App Hello World contenerizada con Docker y publicada en Docker Hub" />
   <meta property="og:image" content="/img/preview.png" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DevOps · Entrega Continua con Docker" />
   <meta name="twitter:description" content="App Hello World contenerizada con Docker y publicada en Docker Hub" />
   <meta name="twitter:image" content="/img/preview.png" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -35,21 +29,19 @@
     <div class="card-inner"></div>
     <div class="card-content">
 
-      <!-- Badge -->
       <span class="badge">
         <span class="status-dot"></span>
-        Docker · Contenedor activo
+        Docker · GitHub Actions · Render
       </span>
 
       <h1 class="hero-name">Hello, World! 🐳</h1>
 
       <p class="hero-text">
         <span>
-          App web estática · Contenerizada con Docker · Imagen publicada en Docker Hub · Nginx como servidor
+          App web estática · Docker · Docker Hub · GitHub Actions CI/CD · Deploy automático en Render.com · Nginx
         </span>
       </p>
 
-      <!-- Tools grid -->
       <div class="layout">
 
         <div class="card">
@@ -74,33 +66,35 @@
 
         <div class="card">
           <div class="card-content">
-            <strong>⚙️ Nginx</strong>
+            <strong>⚙️ GitHub Actions</strong>
             <p class="tool-desc">
-              Servidor web usado como base de la imagen. Sirve los archivos estáticos (HTML/CSS/JS) dentro del contenedor.
+              Plataforma de CI/CD integrada en GitHub. Automatiza el build, push a Docker Hub y el deploy en cada push a main.
             </p>
-            <span class="tool-tag">nginx:alpine · puerto 80 · static files</span>
+            <span class="tool-tag">on: push · build-push · deploy hook</span>
           </div>
         </div>
 
         <div class="card">
           <div class="card-content">
-            <strong>📄 Dockerfile</strong>
+            <strong>🚀 Render.com</strong>
             <p class="tool-desc">
-              Archivo de instrucciones para construir la imagen. Define la base, copia los archivos y configura el servidor.
+              Plataforma cloud para despliegue de contenedores. Jala la imagen desde Docker Hub y la sirve en producción automáticamente.
             </p>
-            <span class="tool-tag">FROM · COPY · EXPOSE · CMD</span>
+            <span class="tool-tag">Web Service · Deploy Hook · Free tier</span>
           </div>
         </div>
 
       </div>
 
-      <!-- Botones -->
       <div class="btns">
-        <a href="https://github.com/Alb3rtsonTL/DevOps-EntregaContinua" target="_blank">
+        <a href="https://github.com/Alb3rtsonTL/DevOps-ContEntregaContinua" target="_blank">
           GitHub Repo ↗
         </a>
         <a href="https://hub.docker.com/u/alb3rtsontl" target="_blank">
           Docker Hub ↗
+        </a>
+        <a href="https://dashboard.render.com" target="_blank">
+          Render Deploy ↗
         </a>
       </div>
 
