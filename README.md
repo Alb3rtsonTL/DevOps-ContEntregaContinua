@@ -1,4 +1,4 @@
-# DevOps · Entrega Continua con Docker [![web](https://img.shields.io/badge/repo-blue)](https://github.com/Alb3rtsonTL/DevOps-EntregaContinua)
+# DevOps · Entrega Continua con Docker [![web](https://img.shields.io/badge/repo-blue)](https://github.com/Alb3rtsonTL/DevOps-Render-Deploy)
 
 ![Info](https://img.shields.io/badge/type-Practice-white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
@@ -6,7 +6,7 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?logo=render&logoColor=black)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Versión](https://img.shields.io/badge/Versi%C3%B3n-2.0-brightgreen)](https://github.com/Alb3rtsonTL/DevOps-EntregaContinua)
+[![Versión](https://img.shields.io/badge/Versi%C3%B3n-2.0-brightgreen)](https://github.com/Alb3rtsonTL/DevOps-Render-Deploy)
 
 ---
 
@@ -53,7 +53,7 @@ GitHub Actions
 ## Estructura del Proyecto
 
 ```
-DevOps-EntregaContinua/
+DevOps-Render-Deploy/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml   <- Pipeline CI/CD
@@ -87,7 +87,7 @@ DevOps-EntregaContinua/
 3. Seleccionar **Deploy an existing image from a registry**
 4. En Image URL poner:
    ```
-   docker.io/<tu-usuario-dockerhub>/devops-helloworld:latest
+   docker.io/<tu-usuario-dockerhub>/devops-render-deploy:latest
    ```
 5. Elegir el plan **Free** y hacer clic en **Create Web Service**
 
@@ -154,14 +154,14 @@ on:
 
 ```bash
 # Build
-docker build -t devops-helloworld .
+docker build -t devops-render-deploy .
 
 # Run local
-docker run -d -p 8080:80 devops-helloworld
+docker run -d -p 8080:80 devops-render-deploy
 
 # Push manual a Docker Hub
-docker tag devops-helloworld <usuario>/devops-helloworld:latest
-docker push <usuario>/devops-helloworld:latest
+docker tag devops-render-deploy <usuario>/devops-render-deploy:latest
+docker push <usuario>/devops-render-deploy:latest
 ```
 
 ---
